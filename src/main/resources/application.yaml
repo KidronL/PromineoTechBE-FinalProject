@@ -1,0 +1,15 @@
+spring: #setting up connection with database
+  datasource:
+    username: general_store
+    password: general_store
+    url: jdbc:mysql://localhost:3306/general_store
+    
+  jpa: #setting up JPA to create tables
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    defer-datasource-initialization: true
+    
+  sql:
+    init:
+      mode: always
